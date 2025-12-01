@@ -3,10 +3,6 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -65,4 +61,15 @@ h1 {
 .div-1{
   position: relative;
   top: -9vh;
+}
+.grid1{
+  position: relative;
+  left: 31.5%;
+  height: 8vh;
+}
+.inputs{
+  margin-left: 1vw;
+}
+#i-1{
+  margin-top: -4.5vh;
 }
