@@ -6,7 +6,6 @@ import Login from './components/Login'
 import LandingPage from './components/LandingPage'
 import Applicants from './components/Applicants'
 import LandingPage1 from './components/LandingPage1'
-import NavBar1 from './components/NavBar1'
 
 function App() {
 
@@ -20,7 +19,6 @@ function App() {
           <Route path='/applicants' element={<Applicants/>}></Route>
           <Route path='/#2' element={<LandingPage1/>}></Route>
         </Routes>
-        <NavBar1/>
       </div>
   )
 }
