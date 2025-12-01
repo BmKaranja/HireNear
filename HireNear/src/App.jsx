@@ -6,7 +6,6 @@ import Login from './components/Login'
 import LandingPage from './components/LandingPage'
 import Applicants from './components/Applicants'
 import LandingPage1 from './components/LandingPage1'
-
 function App() {
 
   return (
