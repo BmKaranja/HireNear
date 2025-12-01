@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Searchbar() {
+function Applicants() {
   return (
     <div>
       
@@ -8,4 +8,4 @@ function Searchbar() {
   )
 }
 
-export default Searchbar
+export default Applicants

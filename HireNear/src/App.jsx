@@ -1,18 +1,27 @@
 import { Routes , Route} from 'react-router-dom'
 import './App.css'
-import NavBar from './components/NavBar'
 import JobList from './components/JobList'
+import SignUp from './components/SignUp'
+import Login from './components/Login'
+import LandingPage from './components/LandingPage'
+import Applicants from './components/Applicants'
+import LandingPage1 from './components/LandingPage1'
+import NavBar1 from './components/NavBar1'
 
 function App() {
 
   return (
       <div>
         <Routes>
+          <Route path='/' element={<LandingPage/>}></Route>
           <Route path='/jobs' element={<JobList />}></Route>
+          <Route path='/signup' element={<SignUp/>}></Route>
+          <Route path='/login' element={<Login/>}></Route>
+          <Route path='/applicants' element={<Applicants/>}></Route>
+          <Route path='/#2' element={<LandingPage1/>}></Route>
         </Routes>
-        <NavBar />
+        <NavBar1/>
       </div>
-    
   )
 }
 
