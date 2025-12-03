@@ -21,8 +21,8 @@ function SignUp() {
       <input type='email' placeholder='JohnDoe@gmail.com'required className='inputs w-93 h-8 bg-gray-300'></input><br></br><br></br>
       <input type='password' placeholder='Enter your password'required className=' inputs w-93 h-8  bg-gray-300'id='i-1' ></input><br></br>
       </div>
-      <button className='bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mt-6 h-10' id='i-1'>
-        <Link>
+      <button type='submit' className='bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mt-6 h-10' id='i-1'>
+        <Link to = '/landingpage'>
           Create Account →
         </Link>
       </button>

@@ -14,11 +14,11 @@ function LandingPage() {
                   employers hire 
                   and seekers get hired
                   </p>
-                <div className='flex float-left gap-8'>
-                  <button className='bg-blue-600 hover:bg-blue-900 text-white font-semibold py-1.5 px-6 rounded-lg ml-20 mt-8'>
+                <div className='flex float-left gap-4'>
+                  <button className='bg-blue-600 hover:bg-blue-900 text-white font-semibold pl-3 pr-3 rounded-lg ml-20 mt-8 h-8 btns'>
                       <Link to='/jobs'>Job opportunities →</Link>
                   </button>
-                  <button className='bg-white hover:bg-blue-900 text-blue-600 font-semibold py-1.5 px-4 rounded-lg ml-20 mt-8'>
+                  <button className='bg-white hover:bg-blue-900 hover:text-white text-blue-600 font-semibold rounded-lg ml-20 mt-8 pl-3 pr-3 btns'>
                       <Link to ='/hire'>Hire Talent →</Link>
                   </button>
                 </div>

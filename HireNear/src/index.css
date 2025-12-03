@@ -32,6 +32,8 @@ h1 {
   color: white;
 }
 .Links:hover{
+  animation-duration: 6ms;
+  transition: 1s;
   text-decoration: underline;
   color: #0f52ba;
 }
@@ -72,4 +74,12 @@ h1 {
 }
 #i-1{
   margin-top: -4.5vh;
+}
+.acc:hover{
+  color: #0f52ba;
+  transition: 500ms;
+}
+.btns:hover{
+  transform: scale(1.1);
+  transition: 600ms;
 }

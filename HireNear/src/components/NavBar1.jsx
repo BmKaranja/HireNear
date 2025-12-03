@@ -1,4 +1,5 @@
 import React from 'react'
+import { FiUser } from "react-icons/fi";
 import { Link} from 'react-router-dom'
 
 function NavBar1() {
@@ -12,7 +13,7 @@ function NavBar1() {
           <div className='flex w-auto gap-10'>
             <p className='l-1 text-white mt-0.5 '><Link to='/jobs' className='Links'>Looking for a Job?</Link> / <Link to ='/hire'className='Links'>Looking to Hire?</Link></p>
             <Link to = '/account'>
-                <img src='account.png' className='h-8 ml-7'></img>
+                <FiUser size={24} color="#0f52ba" className='mr-6.5 acc' />
             </Link>
           </div>
         </div>
