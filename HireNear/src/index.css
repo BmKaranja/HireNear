@@ -14,7 +14,7 @@ body{
   position: relative;
   background-color: white;
   height: 100vh;
-  width: 100vw;
+  overflow-x: hidden;
 }
 a {
   font-weight: 500;
@@ -39,7 +39,7 @@ h1 {
 }
 .f-1{
   margin-top:5%;
-  position: absolute;
+  position: relative;
   left: 0%;
   right:0%;
 }
@@ -94,4 +94,8 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.navbr{
+  position: relative;
+  top:-10%;
 }

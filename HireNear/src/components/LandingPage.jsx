@@ -6,7 +6,7 @@ import Footer from './Footer'
 function LandingPage() {
   return (
     <div className='w-screen h-screen bar '>
-        <section className=' mr-0 w-screen h-130 top ' style={{marginRight:-20}}>
+        <section className=' mr-0 w-screen h-130 top '>
         <NavBar/>
         <article div className='grid grid-cols-2 gap-20 mt-20'>
             <div className='div-1'>
