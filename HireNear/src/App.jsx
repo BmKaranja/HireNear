@@ -6,9 +6,11 @@ import Login from './components/Login'
 import LandingPage from './components/LandingPage'
 import Applicants from './components/Applicants'
 import LandingPage1 from './components/LandingPage1'
+import WorkInProgress from './components/WorkInProgress'
 function App() {
 
   return (
+    <>
       <div>
         <Routes>
           <Route path='/' element={<LandingPage/>}></Route>
@@ -17,8 +19,10 @@ function App() {
           <Route path='/login' element={<Login/>}></Route>
           <Route path='/applicants' element={<Applicants/>}></Route>
           <Route path='/landingpage' element={<LandingPage1/>}></Route>
+          <Route path='/WorkInProgress' element={<WorkInProgress/>}></Route>
         </Routes>
       </div>
+      </>
   )
 }
 

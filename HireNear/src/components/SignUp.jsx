@@ -7,7 +7,7 @@ function SignUp() {
     <div className='p-5'>
       <h2  className="text-4xl" style={{fontWeight:700}}>Sign Up For Free!</h2>
       <Link 
-        to="/" 
+        to="/landingpage" 
         className="inline-flex items-center text-center gap-5 px-20 pl-13 py-2 border rounded-4xl bg-gray-300 hover:bg-gray-100 mt-4">
         <FaGoogle className="text-red-500" />
         Sign Up with Google

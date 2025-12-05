@@ -7,7 +7,7 @@ function Login() {
     <div className='mt-20'>
       <h2 style={{fontWeight:700 ,fontSize:'6vh'}}>WELCOME BACK!</h2>
       <Link 
-        to="/" 
+        to="/landingpage" 
         className="inline-flex items-center text-center gap-5 px-20 pl-13 py-2 border rounded-4xl bg-gray-300 hover:bg-gray-100 mt-4">
         <FaGoogle className="text-red-500" />
         Log In with Google

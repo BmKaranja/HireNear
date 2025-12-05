@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar1 from './NavBar1'
 import { Link} from 'react-router-dom'
+import Footer from './Footer'
 
 function LandingPage1() {
   return (
@@ -26,6 +27,7 @@ function LandingPage1() {
             <img src='Job_searching-removebg-preview.png' className='h-90' id='searching'></img>
         </article>
         </section>
+        <Footer/>
     </div>
   )
 }

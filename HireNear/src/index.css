@@ -37,6 +37,12 @@ h1 {
   text-decoration: underline;
   color: #0f52ba;
 }
+.f-1{
+  margin-top:5%;
+  position: absolute;
+  left: 0%;
+  right:0%;
+}
 .top{
   width: 100vw;
   background-color: #111111;
