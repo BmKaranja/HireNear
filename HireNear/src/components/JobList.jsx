@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBr2 from './NavBr2'
 import Searchbar from './Searchbar'
+import JobCard from './JobCards'
 
 function JobList() {
   return (
@@ -8,7 +9,14 @@ function JobList() {
       <div id='top1'>
         <NavBr2/>
       </div>
-      <Searchbar/>
+      <div className='flex flex-1 flex-row'>
+        <div>
+          <Searchbar/>
+        </div>
+        <div>
+          <JobCard/>
+        </div>
+      </div>
     </div>
   )
 }

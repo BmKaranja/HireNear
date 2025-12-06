@@ -107,13 +107,18 @@ h1 {
   height: 7vh;
 }
 #jobsearch{
-  position:relative;
   background-color:lightgray;
-  border-style:solid;
   border-radius: 10px;
-  box-shadow: #0f52ba;
   width: 25vw;
   height: 6vh;
   padding: 5px;
-  margin-top: 1%;
+  margin-top: 15%;
+}
+.marginr{
+  position: relative;
+  left: 20%;
+}
+.jobcard{
+  box-shadow: #0f52ba;
+  height: fit-content;
 }
