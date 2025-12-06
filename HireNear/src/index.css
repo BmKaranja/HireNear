@@ -12,7 +12,7 @@ body{
   margin: 0;
   padding: 0;
   position: relative;
-  background-color: white;
+  background-color: rgb(255, 255, 255)fd;
   height: 100vh;
   overflow-x: hidden;
 }
@@ -98,4 +98,22 @@ h1 {
 .navbr{
   position: relative;
   top:-10%;
+}
+#top1{
+  position:absolute;
+  top:0%;
+  left:0%;
+  background-color: #f6fafd;
+  height: 7vh;
+}
+#jobsearch{
+  position:relative;
+  background-color:lightgray;
+  border-style:solid;
+  border-radius: 10px;
+  box-shadow: #0f52ba;
+  width: 25vw;
+  height: 6vh;
+  padding: 5px;
+  margin-top: 1%;
 }
