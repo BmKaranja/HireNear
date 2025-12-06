@@ -116,9 +116,15 @@ h1 {
 }
 .marginr{
   position: relative;
-  left: 20%;
+  left: 5%;
 }
-.jobcard{
+.jobcards{
   box-shadow: #0f52ba;
   height: fit-content;
+  background-color: lightblue;
+  width: 28vw;
+}
+.jdetails{
+  font-size: small;
+  padding-left: 10%;
 }
