@@ -1,0 +1,2 @@
+- [ ] Add 'bg-gray-200' class to the outer div in Searchbar.jsx for light gray background
+- [ ] Add 'w-full' class to the Searchbar div in JobList.jsx to make it full width

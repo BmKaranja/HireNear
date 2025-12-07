@@ -112,19 +112,33 @@ h1 {
   width: 25vw;
   height: 6vh;
   padding: 5px;
-  margin-top: 15%;
+  margin-top: 20%;
+  box-shadow: 0 4px 6px rgba(59, 130, 246, 0.5);
 }
 .marginr{
   position: relative;
-  left: 5%;
+  left: 0.5%;
 }
 .jobcards{
-  box-shadow: #0f52ba;
-  height: fit-content;
-  background-color: lightblue;
-  width: 28vw;
+  left: 100%;
+  padding-top: 5%;
+  text-align: left;
+  height: 25vh;
+  width: 32.5vw;
+  box-shadow: 2px 4px 6px rgba(59, 130, 246, 0.5);
+  border-radius: 5%;
+  overflow: hidden;
+
 }
 .jdetails{
   font-size: small;
   padding-left: 10%;
+  padding-top: 2%;
+  overflow: hidden;
+  font-weight: 500;
+}
+#cover{
+  position:relative;
+  left: -10%;
+  bottom: 0%;
 }
