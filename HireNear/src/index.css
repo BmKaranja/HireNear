@@ -132,7 +132,7 @@ h1 {
 }
 .jdetails{
   font-size: small;
-  padding-left: 10%;
+  padding-left: 5%;
   padding-top: 2%;
   overflow: hidden;
   font-weight: 500;
@@ -141,4 +141,7 @@ h1 {
   position:relative;
   left: -10%;
   bottom: 0%;
+}
+.shadows{
+  box-shadow: 2px 4px 6px rgba(59, 130, 246, 0.5);
 }

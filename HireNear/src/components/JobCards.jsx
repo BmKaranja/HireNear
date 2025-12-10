@@ -4,8 +4,8 @@ function JobCard() {
   return (
     <div className='grid grid-cols-2 marginr gap-20 mt-10'>
       <div className='flex flex-1 flex-row h-10 jobcards gap-2'>
-        <div className='pl-4'>
-          <img src="account.png" alt="employer" className='h-20 w-100 mt-3'/>
+        <div className='pl-4 pr-4 bg-amber-950'>
+          <img src="account.png" alt="employer" className='h-20 w-100 mt-5 mr-2'/>
         </div>
         <div className='jdetails'>
           <p>Job Name</p>
@@ -14,8 +14,8 @@ function JobCard() {
         </div>
       </div>
       <div className='flex flex-1 flex-row h-10 jobcards gap-1'>
-        <div className='pl-4'>
-          <img src="account.png" alt="employer" className='h-20 w-100 mt-3'/>
+        <div className='pl-4 pr-4'>
+          <img src="account.png" alt="employer" className='h-20 w-100 mt-3 mr-2'/>
         </div>
         <div className='jdetails'>
           <p>Job Name</p>
