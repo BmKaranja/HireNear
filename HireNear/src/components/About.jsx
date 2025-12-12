@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function About() {
   return (
@@ -7,17 +8,28 @@ function About() {
       <div className="text-lg leading-relaxed">
         <div className='flex items-center gap-8 mb-20 mt-20'>
             <img src='pexels-resumegenius-18848926.jpg' className='w-120 h-100 shadows rounded-2xl shrink-0 abt-img'></img>
-            <p className="text-gray-700 text-lg leading-relaxed abt">
-            Welcome to HireNear, your premier platform for connecting job seekers with local opportunities.
-            We believe in bridging the gap between talent and employers in your community.
-            </p>
+            <div>
+              <p className="text-gray-700 text-lg leading-relaxed abt">
+              Welcome to HireNear, your premier platform for connecting job seekers with local opportunities.
+              We believe in bridging the gap between talent and employers in your community.
+              </p>
+              <Link to='/jobs' className='bg-gray-200 pl-4 pr-4 rounded-2xl text-blue-600 font-semibold hover:bg-blue-900 hover:text-white mt-4 inline-block btns'>
+                Jobs →
+              </Link>
+            </div>
         </div>
         <div className='flex items-center gap-8 mb-20'>
-          <p className="mb-6 text-gray-700 text-lg leading-relaxed abt">
-            Our mission is to make job searching and hiring as seamless as possible, providing tools
-            that help you find the perfect match whether you're looking for your next career move or
-            seeking to grow your team.
-          </p>
+          <div>
+            <p className="mb-6 text-gray-700 text-lg leading-relaxed abt">
+              Our mission is to make job searching and hiring as seamless as possible, providing tools
+              that help you find the perfect match whether you're looking for your next career move or
+              seeking to grow your team.
+            </p>
+            <Link to='/jobs' className='bg-gray-200 pl-4 pr-4 rounded-2xl text-blue-600 font-semibold hover:bg-blue-900 hover:text-white mt-4 inline-block btns'>
+                Applicants →
+            </Link>
+
+          </div>
           <img src='pexels-sora-shimazaki-5668863.jpg' className='w-120 h-100 shadows rounded-2xl shrink-0 abt-img'></img>
         </div>
         <div className='flex items-center gap-8 mb-20'>
