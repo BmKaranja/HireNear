@@ -25,7 +25,7 @@ function About() {
               that help you find the perfect match whether you're looking for your next career move or
               seeking to grow your team.
             </p>
-            <Link to='/jobs' className='bg-gray-200 pl-4 pr-4 rounded-2xl text-blue-600 font-semibold hover:bg-blue-900 hover:text-white mt-4 inline-block btns'>
+            <Link to='/applicants' className='bg-gray-200 pl-4 pr-4 rounded-2xl text-blue-600 font-semibold hover:bg-blue-900 hover:text-white mt-4 inline-block btns'>
                 Applicants →
             </Link>
 

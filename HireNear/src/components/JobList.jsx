@@ -9,7 +9,7 @@ function JobList() {
       <div id='top1'>
         <NavBr2/>
       </div>
-      <div className='flex flex-1 flex-row'>
+      <div className='flex flex-1 flex-row bg-gray-200'>
         <div>
           <Searchbar/>
         </div>
