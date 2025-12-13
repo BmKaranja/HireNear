@@ -3,6 +3,7 @@ import NavBar from './NavBar'
 import { Link} from 'react-router-dom'
 import Footer from './Footer'
 import About from './About'
+import Snowfall from 'react-snowfall'
 
 function LandingPage() {
   return (
@@ -28,6 +29,7 @@ function LandingPage() {
             <img src='Job_searching-removebg-preview.png' className='h-90' id='searching'></img>
         </article>
         </section>
+        <Snowfall style={{height:'25vh'}}wind={[-0.5, 2.0]} />
         <About/>
       <Footer/>
     </div>

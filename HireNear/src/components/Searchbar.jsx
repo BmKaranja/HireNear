@@ -2,7 +2,7 @@ import React from 'react'
 
 function Searchbar() {
   return (
-    <div>
+    <div className='w-90'>
       <input type='search' placeholder='🔍 Search for your dream job.....' id='jobsearch' className='shadow-blue-950'></input><br></br><br></br>
       <p className='underline'>Job Filter</p><br></br>
       <input type='checkbox'></input><label>Part-time</label><br></br><br></br>

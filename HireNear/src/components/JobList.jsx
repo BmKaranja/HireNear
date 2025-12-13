@@ -9,8 +9,8 @@ function JobList() {
       <div id='top1'>
         <NavBr2/>
       </div>
-      <div className='flex flex-1 flex-row bg-gray-200'>
-        <div>
+      <div className='flex flex-1 flex-row gap-4'>
+        <div className='bg-gray-200' style={{marginLeft:'-3vw', backgroundColor:'whitesmoke'}} >
           <Searchbar/>
         </div>
         <div>

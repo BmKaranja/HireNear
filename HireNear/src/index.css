@@ -105,21 +105,18 @@ h1 {
   position:absolute;
   top:0%;
   left:0%;
-  background-color: #f6fafd;
-  height: 7vh;
+  background-color:#f6fafd;
+  height: 10vh;
+  padding-top: 1%;
 }
 #jobsearch{
   background-color:lightgray;
   border-radius: 10px;
   width: 25vw;
   height: 6vh;
-  padding: 5px;
+  padding: 15px;
   margin-top: 20%;
   box-shadow: 0 4px 6px rgba(59, 130, 246, 0.5);
-}
-.marginr{
-  position: relative;
-  left: 0.5%;
 }
 .jobcards{
   left: 100%;
@@ -130,7 +127,6 @@ h1 {
   box-shadow: 2px 4px 6px rgba(59, 130, 246, 0.5);
   border-radius: 5%;
   overflow: hidden;
-
 }
 .jdetails{
   font-size: small;
