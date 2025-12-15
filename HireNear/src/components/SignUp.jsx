@@ -5,10 +5,15 @@ import { Link, useNavigate } from 'react-router-dom';
 function SignUp() {
   const navigate = useNavigate();
 
+  const [isLoading, setIsLoading] = React.useState(false);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (e.target.checkValidity()) {
-      navigate('/landingpage');
+      setIsLoading(true);
+      setTimeout(() => {
+        navigate('/landingpage');
+      }, 1500);
     }
   };
 
@@ -25,32 +30,31 @@ function SignUp() {
       <form onSubmit={handleSubmit}>
       <div className='flex1'>
         <div>
-        <label for='FNme'>First Name: </label>
+        <label htmlFor='FNme'>First Name: </label>
         <input type='text' id='FNme' required className=' bg-gray-100 w-93 h-8'></input><br></br>
         </div>
         <br></br>
         <div>
-        <label for='LNme'>Last Name: </label>
+        <label htmlFor='LNme'>Last Name: </label>
         <input type='text' id='LNme' required className=' bg-gray-100  w-93 h-8'></input><br></br>
         </div>
         <br></br>
         <div>
-        <label for='Usere'>Email Account: </label>
+        <label htmlFor='Usere'>Email Account: </label>
         <input type='email' id ='Usere' required className=' w-93 h-8 bg-gray-100'></input><br></br>
         </div>
         <br></br>
         <div>
-        <label for='Usps'>Password: </label>
-        <input type='password'id='Usps' required className=' w-93 h-8  bg-gray-100' ></input><br></br>
+        <label htmlFor='Usps'>Password: </label>
+        <input type='password' id='Usps' required className=' w-93 h-8  bg-gray-100' ></input><br></br>
         </div>
         <br></br>
       </div>
-      <button type='submit' className='bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full  h-10' id='btn-1'>
-        Create Account →
+      <button type='submit' disabled={isLoading} className='bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full h-10' id='btn-1'>
+        {isLoading ? 'Loading...' : 'Create Account →'}
       </button>
-      <p>Already have an Account?<Link to='/login'className="text-blue-600 mt-6">Login</Link> </p>
+      <p>Already have an Account?<Link to='/login' className="text-blue-600 mt-6">Login</Link> </p>
     </form>
-      <script src='script.js' ></script>
     </div>
   );
 }

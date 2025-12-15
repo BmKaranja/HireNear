@@ -4,11 +4,14 @@ import { FaGoogle } from "react-icons/fa";
 
 function Login() {
   const navigate = useNavigate();
-
+  const [isLoading, setIsLoading] = React.useState(false);
   const handleSubmit = (e) => {
     e.preventDefault();
     if (e.target.checkValidity()) {
-      navigate('/landingpage');
+      setIsLoading(true);
+      setTimeout(() => {
+        navigate('/landingpage');
+      }, 1500);
     }
   };
 
@@ -29,8 +32,8 @@ function Login() {
         <label for='password'>Password: </label>
         <input type ='Password' id ='password' required className='bg-gray-100 border rounded border-blue-500'></input>
       </div>
-      <button type='submit' className='bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mt-6 h-10 pl-5 pr-5'>
-        Login →
+      <button type='submit'  disabled={isLoading} className='bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mt-6 h-10 pl-5 pr-5'>
+        {isLoading ? 'Loading...' : 'Login→'}
       </button>
       <p>Don't have an Account?<Link to='/signup'className="text-blue-600 mt-6">SignUp</Link> </p>
       </form>
