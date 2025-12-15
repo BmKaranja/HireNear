@@ -8,15 +8,19 @@ function JobList() {
     <div>
       <div id='top1'>
         <NavBr2/>
-      </div>
-      <div className='flex flex-1 flex-row gap-4'>
-        <div className='bg-gray-200' style={{marginLeft:'-3vw', backgroundColor:'whitesmoke'}} >
-          <Searchbar/>
-        </div>
-        <div>
-          <JobCard/>
-        </div>
-      </div>
+      </div>        
+      <section className="flex flex-row flex-1">
+          {/* Sidebar with sticky search bar */}
+          <div className="w-1/4 h-screen sticky top-0 " style={{marginLeft:'-3vw'}} >
+            <Searchbar/>
+          </div>
+
+          {/* Scrollable profile cards */}
+          <div className="flex-1 overflow-y-auto p-4 ml-10">
+            <JobCard />
+          </div>
+        </section>
+
     </div>
   )
 }
