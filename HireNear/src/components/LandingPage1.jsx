@@ -10,7 +10,7 @@ function LandingPage1() {
     <div className='w-screen h-screen bar '>
         <section className=' mr-0 w-screen h-130 top'>
         <NavBar1/>
-        <article div className='grid grid-cols-2 gap-20 mt-20'>
+        <article div className='top1 mt-25'>
             <div className='div-1'>
                 <p className='text-6xl txt-1 pl-15'>
                   HireNear — where

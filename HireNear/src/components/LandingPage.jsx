@@ -10,14 +10,14 @@ function LandingPage() {
     <div className='w-screen h-screen bar '>
         <section className=' mr-0 w-screen h-130 top '>
         <NavBar/>
-        <article div className='grid grid-cols-2 gap-20 mt-20'>
+        <article div className='mt-25 top1 '>
             <div className='div-1'>
                 <p className='text-6xl txt-1 pl-15'>
                   HireNear — where
                   employers hire 
                   and seekers get hired
                   </p>
-                <div className='flex float-left gap-4'>
+                <div className='flex float-left gap-4 flex-1 '>
                   <button className='bg-blue-600 hover:bg-blue-900 text-white font-semibold pl-3 pr-3 rounded-lg ml-20 mt-8 h-8 btns'>
                       <Link to='/jobs'>Job opportunities →</Link>
                   </button>
