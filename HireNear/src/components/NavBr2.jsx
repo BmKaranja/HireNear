@@ -10,7 +10,7 @@ function NavBr2() {
             <Link to='/'>
               <span className=' Name text-xl pt-1'>HireNear</span>
             </Link>
-            <img src='logo.png' className='size-7 pt-1.5'></img>
+            <img src='/logo.png' className='size-7 pt-1.5'></img>
           </div>
           <div className='flex w-auto gap-10'>
             <p className='l-1 text-blue-900 mt-0.5 '><Link to='/jobs'>Looking for a Job?</Link> / <Link to ='/applicants'>Looking to Hire?</Link></p>

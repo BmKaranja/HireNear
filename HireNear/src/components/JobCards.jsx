@@ -17,7 +17,7 @@ function JobCard() {
       </div>
       <div className='flex flex-1 flex-row h-10 jobcards'>
         <div className='pl-4 pr-4'>
-          <img src="account.png" alt="employer" className='h-20 w-20 mt-5 mr-2'/>
+          <img src="/account.png" alt="employer" className='h-20 w-20 mt-5 mr-2'/>
         </div>
         <div className='jdetails'>
           <p>Job Name</p>
@@ -30,7 +30,7 @@ function JobCard() {
 
       <div className='flex flex-1 flex-row h-10 jobcards gap-1'>
         <div className='pl-4 pr-4'>
-          <img src="account.png" alt="employer" className='h-20 w-20 mt-5 mr-2'/>
+          <img src="/account.png" alt="employer" className='h-20 w-20 mt-5 mr-2'/>
         </div>
         <div className='jdetails'>
           <p>Job Name</p>
