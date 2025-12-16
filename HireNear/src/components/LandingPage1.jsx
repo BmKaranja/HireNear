@@ -26,7 +26,7 @@ function LandingPage1() {
                   </button>
                 </div>
             </div>
-            <img src='/Job_searching-removebg-preview.png' className='h-90' id='searching'></img>
+            <img src='public\Job_searching-removebg-preview.png' className='h-90' id='searching'></img>
         </article>
         </section>
         <Snowfall style={{height:'25vh'}}wind={[-0.5, 2.0]} />

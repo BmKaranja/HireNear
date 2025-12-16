@@ -9,7 +9,7 @@ function NavBar() {
             <Link to='/'>
             <span className=' Name text-xl pt-1'>HireNear</span>
             </Link>
-            <img src='/logo.png' className='size-7 pt-1.5'></img>
+            <img src='public\logo.png' className='size-7 pt-1.5'></img>
           </div>
           <div className='flex flex-right w-auto gap-10'>
             <p className='l-1 text-white mt-0.5 pr-7'><Link to='/jobs' className='Links'>Looking for a Job?</Link> / <Link to ='/applicants'className='Links'>Looking to Hire?</Link></p>

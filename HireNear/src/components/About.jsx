@@ -7,7 +7,7 @@ function About() {
       <h1 className="text-4xl font-bold text-center mb-8 underline">About HireNear</h1>
       <div className="text-lg leading-relaxed">
         <div className='flex items-center gap-8 mb-20 mt-20'>
-            <img src='pexels-resumegenius-18848926.jpg' className='w-120 h-100 shadows rounded-2xl shrink-0 abt-img'></img>
+            <img src='public\pexels-resumegenius-18848926.jpg' className='w-120 h-100 shadows rounded-2xl shrink-0 abt-img'></img>
             <div>
               <p className="text-gray-700 text-lg leading-relaxed abt">
               Welcome to HireNear, your premier platform for connecting job seekers with local opportunities.
@@ -30,10 +30,10 @@ function About() {
             </Link>
 
           </div>
-          <img src='pexels-sora-shimazaki-5668863.jpg' className='w-120 h-100 shadows rounded-2xl shrink-0 abt-img'></img>
+          <img src='public\pexels-sora-shimazaki-5668863.jpg' className='w-120 h-100 shadows rounded-2xl shrink-0 abt-img'></img>
         </div>
         <div className='flex items-center gap-8 mb-20'>
-          <img src='pexels-cottonbro-5989928.jpg' className='w-120 h-100 shadows rounded-2xl shrink-0 abt-img'></img>
+          <img src='public\pexels-cottonbro-5989928.jpg' className='w-120 h-100 shadows rounded-2xl shrink-0 abt-img'></img>
           <p className="mb-6 text-gray-700 text-lg leading-relaxed abt">
             With features like location-based job searches, detailed job listings, and easy application
             processes, HireNear is designed to make the job market more accessible and efficient for everyone.
