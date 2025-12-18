@@ -2,8 +2,10 @@ import React , {useState, useEffect}from 'react'
 
 function ProfileCard() {
   const [users, setUsers]=useState([])
+  const [searchTerm, setSearchTerm] = useState('')
+  const [inputValue, setInputValue] = useState('')
 useEffect(() => {
-    fetch("https://randomuser.me/api/?results=18")
+    fetch("https://randomuser.me/api/?results=21")
       .then((res) => res.json())
       .then((data) => setUsers(data.results))
       .catch((err) => console.log("Error encountered:", err));
@@ -26,29 +28,42 @@ useEffect(() => {
     { id: 15, title: "Customer Support Lead", rating: 4.8 },
     { id: 16, title: "Operations Manager", rating: 4.7 }
   ]
+  const filteredUsers = users.map((user, idx) => ({ user, job: joblists[idx % joblists.length] })).filter(({ job }) => job.title.toLowerCase().includes(searchTerm.toLowerCase()));
+  const handleSearch = () => {
+    setSearchTerm(inputValue);
+  };
   return (
     <div>
-      <input type='search' placeholder='🔍 Search for applicants.....' id='appsearch' className='shadow-blue-950 lg:100 h-10 sm:w-10 md:w-75'></input><br></br><br></br>
-      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-2'>
-        {users.map((user, indx) => (
+      <input type='search' placeholder='🔍 Search for applicants.....' id='appsearch' className='shadow-blue-950 lg:100 h-10 sm:w-10 md:w-75' onChange={(e) => setInputValue(e.target.value)} value={inputValue}></input>
+      <button onClick={handleSearch} className='bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300 ml-2'>Search</button><br></br><br></br>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+        {filteredUsers.map(({ user, job }) => (
           <div
-            className='mt-4 mb-4 ml-6 mr-4 p-10 border rounded-lg shadow-lg hover:shadow-2xl transition duration-300'
+            className='mt-4 mb-4 ml-6 mr-4 p-5 border rounded-lg shadow-lg hover:shadow-2xl transition duration-300 bg-gray-100'
             key={user.login.uuid}
           >
-            <img src={user.picture.large} className='shadows' id='prof' />
-            <span className='font-bold mb-2'>
-              {user.name.first} {user.name.last}
-            </span>
-            <p className='text-gray-600 mb-4'>
-              {joblists[indx % joblists.length].title}
-            </p>
-            <button className='bg-blue-500 text-white px-3 py-0.5 rounded hover:bg-blue-600 transition duration-300'>
-              View Profile →
-            </button>
+              <div className='flex items-center'>
+                <img src={user.picture.large} className='shadows' id='prof' />
+                <div>
+                  <p className='font-bold '>
+                    {user.name.first} {user.name.last}
+                  </p>
+                  <p className='text-gray-600 mb-4'>
+                    {job.title}
+                  </p>
+                </div>
+              </div>
+              <button className='bg-blue-500 text-white px-3 py-0.5 rounded hover:bg-blue-600 transition duration-300'>
+                View Profile →
+              </button>
+
           </div>
         ))}
       </div>
-      </div>
+      {filteredUsers.length === 0 && searchTerm && (
+        <p className='text-center text-gray-500 mt-4'>No applicants found for the searched job title.</p>
+      )}
+    </div>
 
   )
 }
