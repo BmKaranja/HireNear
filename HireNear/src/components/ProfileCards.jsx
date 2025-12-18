@@ -1,5 +1,4 @@
 import React , {useState, useEffect}from 'react'
-import SearchBar1 from './SearchBar1';
 
 function ProfileCard() {
   const [users, setUsers]=useState([])
@@ -29,7 +28,7 @@ useEffect(() => {
   ]
   return (
     <div>
-      <SearchBar1/>
+      <input type='search' placeholder='🔍 Search for applicants.....' id='appsearch' className='shadow-blue-950 lg:100 h-10 sm:w-10 md:w-75'></input><br></br><br></br>
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-2'>
         {users.map((user, indx) => (
           <div

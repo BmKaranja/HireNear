@@ -1,5 +1,4 @@
 import React from 'react'
-import SearchBar1 from './SearchBar1'
 import NavBr2 from './NavBr2'
 import ProfileCards from './ProfileCards'
 function Applicants() {

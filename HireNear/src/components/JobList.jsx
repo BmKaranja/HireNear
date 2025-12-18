@@ -11,7 +11,7 @@ function JobList() {
       </div>        
       <section className="flex flex-row flex-1">
           {/* Sidebar with sticky search bar */}
-          <div className="w-1/4 h-screen sticky top-0 " style={{marginLeft:'-3vw'}} >
+          <div className="w-1/4 h-screen sticky top-0" style={{marginLeft:'-3vw'}} >
             <Searchbar/>
           </div>
 
