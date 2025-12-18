@@ -130,7 +130,6 @@ h1 {
 }
 .jdetails{
   font-size: small;
-  margin-left: -2vw;
   padding-left: 5%;
   padding-top: 4%;
   overflow: hidden;
@@ -158,10 +157,10 @@ h1 {
 #appsearch{
   background-color:lightgray;
   border-radius: 10px;
-  width: 25vw;
+  width: 35vw;
   height: 6vh;
   padding: 5px;
-  margin-top: 20%;
+  margin-top: 5%;
   box-shadow: 0 4px 6px rgba(59, 130, 246, 0.5);
 }
 #prof{

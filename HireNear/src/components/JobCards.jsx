@@ -29,7 +29,7 @@ function JobCard() {
               <p className="text-gray-500">{details.PositionLocation[0]?.LocationName}</p>
               <p className="text-gray-500">{details.PublicationStartDate}</p>
               <a href={details.ApplyURI[0]} target="_blank" rel="noopener noreferrer">
-                <button className="bg-blue-500 text-white px-3 py-0.5 rounded mt-1 hover:bg-blue-600 transition duration-300">
+                <button className="bg-blue-500 text-white px-3 py-0.5 rounded mt-4 hover:bg-blue-600 transition duration-300">
                   Apply →
                 </button>
               </a>
