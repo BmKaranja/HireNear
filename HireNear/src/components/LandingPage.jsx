@@ -10,9 +10,9 @@ function LandingPage() {
     <div className='w-screen h-screen bar '>
         <section className=' mr-0 w-screen h-130 top '>
         <NavBar/>
-        <article div className='mt-25 top1 '>
-            <div className='div-1'>
-                <p className='text-6xl txt-1 pl-15'>
+        <article div className='mt-25 top1  flex text-center float-left'>
+            <div className='div-1 pr-20 w-3/4'>
+                <p className='text-6xl txt-1 pl-15 mr-20 text-blue-700'>
                   HireNear — where
                   employers hire 
                   and seekers get hired
@@ -26,7 +26,6 @@ function LandingPage() {
                   </button>
                 </div>
             </div>
-            <img src='/Job_searching-removebg-preview.png' className='h-90' id='searching'></img>
         </article>
         </section>
         <Snowfall style={{height:'25vh'}}wind={[-0.5, 2.0]} />

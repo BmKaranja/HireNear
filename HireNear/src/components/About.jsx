@@ -33,7 +33,7 @@ function About() {
           <img src='/pexels-sora-shimazaki-5668863.jpg' className='w-120 h-100 shadows rounded-2xl shrink-0 abt-img'></img>
         </div>
         <div className='flex items-center gap-8 mb-20'>
-          <img src='/pexels-cottonbro-5989928.jpg' className='w-120 h-100 shadows rounded-2xl shrink-0 abt-img'></img>
+          <img src='/pexels-kowalievska-1174775.jpg' className='w-120 h-100 shadows rounded-2xl shrink-0 abt-img'></img>
           <p className="mb-6 text-gray-700 text-lg leading-relaxed abt">
             With features like location-based job searches, detailed job listings, and easy application
             processes, HireNear is designed to make the job market more accessible and efficient for everyone.
