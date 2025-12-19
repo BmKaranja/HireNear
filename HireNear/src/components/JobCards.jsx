@@ -27,7 +27,6 @@ function JobCard() {
     noRating: false
   });
   const ratings = [1, 2, 3, 4, 5];
-
   useEffect(() => {
     fetch("https://data.usajobs.gov/api/Search", {
       method: "GET",
@@ -42,6 +41,7 @@ function JobCard() {
       .catch(err => console.error("Error while fetching jobs:", err));
   }, []);
 
+
   const handleSearch = () => {
     setSearchTerm(inputValue);
     setActiveFilters(filters);
@@ -50,7 +50,6 @@ function JobCard() {
   const handleFilterChange = (filterName) => {
     setFilters(prev => ({ ...prev, [filterName]: !prev[filterName] }));
   };
-
   const filteredJobs = jobs.filter((job) => {
     const details = job.MatchedObjectDescriptor;
     const title = details.PositionTitle.toLowerCase();
@@ -69,7 +68,9 @@ function JobCard() {
     );
 
     return matchesSearch && matchesRating;
+    
   });
+  if (!jobs) return <p className='text-red-50 text-center'>Loading available Jobs...</p>
 
   return (
     <div className="flex flex-row flex-1">

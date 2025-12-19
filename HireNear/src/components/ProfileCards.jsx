@@ -1,4 +1,5 @@
 import React , {useState, useEffect}from 'react'
+import { Link } from 'react-router-dom';
 
 function ProfileCard() {
   const [users, setUsers]=useState([])
@@ -10,6 +11,9 @@ useEffect(() => {
       .then((data) => setUsers(data.results))
       .catch((err) => console.log("Error encountered:", err));
   }, []);
+  if (!users) return <p>
+    Loading....
+  </p>
   const joblists = [
     { id: 1, title: "Software Engineer", rating: 4.5 },
     { id: 2, title: "Product Manager", rating: 4.2 },
@@ -53,9 +57,13 @@ useEffect(() => {
                   </p>
                 </div>
               </div>
-              <button className='bg-blue-500 text-white px-3 py-0.5 rounded hover:bg-blue-600 transition duration-300'>
-                View Profile →
-              </button>
+            <Link
+              to={`/profiles/${user.login.uuid}`}
+              state={{ user }}
+              className="bg-blue-500 text-white px-3 py-0.5 rounded hover:bg-blue-600 transition duration-300"
+            >
+              View Profile
+            </Link>
 
           </div>
         ))}
