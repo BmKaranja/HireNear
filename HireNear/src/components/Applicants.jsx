@@ -1,11 +1,12 @@
 import React from 'react'
-import NavBr2 from './NavBr2'
 import ProfileCards from './ProfileCards'
+import NavBar from './NavBar'
+import Snowfall from 'react-snowfall'
 function Applicants() {
   return (
     <div>
       <div id='top1'>
-      <NavBr2/>
+      <NavBar/>
       </div>
         <section>
           {/* Scrollable profile cards */}
@@ -13,6 +14,7 @@ function Applicants() {
             <ProfileCards />
           </div>
         </section>
+      <Snowfall style={{height:'100vh'}}wind={[-0.5, 2.0]} />
     </div>
   )
 }

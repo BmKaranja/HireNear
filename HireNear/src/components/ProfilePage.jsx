@@ -5,7 +5,6 @@ function ProfilePage() {
   const { id } = useParams();
   const location = useLocation();
   const user = location.state?.user; // retrieve passed user
-
   if (!user) return <p>No user data found for {id}</p>;
 
   return (

@@ -6,13 +6,15 @@ function SignUp() {
   const navigate = useNavigate();
 
   const [isLoading, setIsLoading] = React.useState(false);
-
+  const [Loggedin, setIn] =React.useState(false)
   const handleSubmit = (e) => {
     e.preventDefault();
     if (e.target.checkValidity()) {
       setIsLoading(true);
+      setIn(true)
+      localStorage.setItem('Loggedin', 'true');
       setTimeout(() => {
-        navigate('/landingpage');
+        navigate('/');
       }, 1500);
     }
   };
@@ -21,7 +23,8 @@ function SignUp() {
     <div className='p-5'>
       <h2  className="text-4xl" style={{fontWeight:700}}>Sign Up For Free!</h2>
       <Link
-        to="/landingpage"
+        to="/"
+        onClick={() => localStorage.setItem('Loggedin', 'true')}
         className=" shadows inline-flex items-center text-center gap-5 px-20 pl-13 py-2  rounded-4xl bg-gray-300 hover:bg-gray-100 mt-4">
         <FaGoogle className="text-red-500 " />
         Sign Up with Google

@@ -5,12 +5,15 @@ import { FaGoogle } from "react-icons/fa";
 function Login() {
   const navigate = useNavigate();
   const [isLoading, setIsLoading] = React.useState(false);
+  const [Loggedin, setIn] =React.useState(false)
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     if (e.target.checkValidity()) {
       setIsLoading(true);
+      setIn(true)
       setTimeout(() => {
-        navigate('/landingpage');
+        navigate('/', {state:{Loggedin}});
       }, 1500);
     }
   };
@@ -19,7 +22,8 @@ function Login() {
     <div className='mt-20'>
       <h2 style={{fontWeight:700 ,fontSize:'6vh'}}>WELCOME BACK!</h2>
       <Link
-        to="/landingpage"
+        to="/"
+        onClick={() => localStorage.setItem('Loggedin', 'true')}
         className=" shadows inline-flex items-center text-center gap-5 px-20 pl-13 py-2 rounded-4xl bg-gray-300 hover:bg-gray-100 mt-4">
         <FaGoogle className="text-red-500" />
         Log In with Google

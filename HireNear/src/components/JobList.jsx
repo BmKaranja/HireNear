@@ -1,15 +1,16 @@
 import React from 'react'
-import NavBr2 from './NavBr2'
-import Searchbar from './Searchbar'
 import JobCard from './JobCards'
+import NavBar from './NavBar'
+import Snowfall from 'react-snowfall'
 
 function JobList() {
   return (
     <div>
       <div id='top1'>
-        <NavBr2/>
+        <NavBar />
       </div>        
           <JobCard />
+      <Snowfall style={{height:'100vh'}}wind={[-0.5, 2.0]} />
     </div>
   )
 }

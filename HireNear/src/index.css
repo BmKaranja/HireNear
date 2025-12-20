@@ -27,16 +27,17 @@ h1 {
 }
 .Name{
   font-weight: 700;
-  color: #0f52ba;
-}
-.Links{
   color: white;
 }
+
 .Links:hover{
   animation-duration: 6ms;
   transition: 1s;
   text-decoration: underline;
   color: #0f52ba;
+}
+.footer{
+  background-color:#082d65;
 }
 .f-1{
   margin-top:5%;
@@ -112,7 +113,7 @@ h1 {
   position:absolute;
   top:0%;
   left:0%;
-  background-color:#f6fafd;
+  background-color:#082d65;
   height: 10vh;
   padding-top: 1%;
 }

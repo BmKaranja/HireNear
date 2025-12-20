@@ -43,6 +43,7 @@ function About() {
           Join our community today and discover opportunities right in your neighborhood!
         </p>
       </div>
+      
     </div>
   );
 }
