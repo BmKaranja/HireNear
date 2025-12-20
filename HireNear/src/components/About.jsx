@@ -13,6 +13,7 @@ function About() {
               Welcome to HireNear, your premier platform for connecting job seekers with local opportunities.
               We believe in bridging the gap between talent and employers in your community.
               </p>
+            <hr></hr>
               <Link to='/jobs' className='bg-gray-200 pl-4 pr-4 rounded-2xl text-blue-600 font-semibold hover:bg-blue-900 hover:text-white mt-4 inline-block btns'>
                 Jobs →
               </Link>
@@ -25,6 +26,7 @@ function About() {
               that help you find the perfect match whether you're looking for your next career move or
               seeking to grow your team.
             </p>
+            <hr></hr>
             <Link to='/applicants' className='bg-gray-200 pl-4 pr-4 rounded-2xl text-blue-600 font-semibold hover:bg-blue-900 hover:text-white mt-4 inline-block btns'>
                 Applicants →
             </Link>
@@ -39,6 +41,8 @@ function About() {
             processes, HireNear is designed to make the job market more accessible and efficient for everyone.
           </p>
         </div>
+        <hr></hr>
+
         <p className="text-gray-700 text-lg leading-relaxed italic abt mb-10">
           Join our community today and discover opportunities right in your neighborhood!
         </p>

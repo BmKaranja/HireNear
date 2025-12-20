@@ -8,7 +8,7 @@ function NavBar() {
   return (
     <div>
       <div className='p-2 flex justify-between w-screen mt-0'>
-        <div className='logo grid grid-cols-2' style={{ marginTop: '-2.5%' }}>
+        <div className='logo grid grid-cols-2' style={{ marginTop: '-2%' }}>
           <Link to='/'>
             <span className='Name text-xl pt-1'>HireNear</span>
           </Link>
