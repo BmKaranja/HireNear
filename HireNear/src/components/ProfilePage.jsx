@@ -4,13 +4,22 @@ import NavBar from './NavBar';
 import Footer from './Footer';
 
 function ProfilePage() {
+  const Loggedin = localStorage.getItem('Loggedin') === 'true'
   const { id } = useParams();
   const location = useLocation();
   const user = location.state?.user; // retrieve passed user
   if (!user) return <p>No user data found for {id}</p>;
   function messgeSub(event){
     event.preventDefault();
-    alert('Message sent successfully!')
+    {Loggedin?(
+      clear(),
+      alert('Message sent successfully!')
+    ):(
+      alert('Please login to send message')
+    )}
+  }
+  function clear(){
+    document.getElementById('message').value=''
   }
   return (
     <div>

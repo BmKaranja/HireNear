@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { FiUser } from 'react-icons/fi'
+import { FaRegCommentDots } from "react-icons/fa";
 
 function NavBar() {
   const Loggedin = localStorage.getItem('Loggedin') === 'true'
@@ -20,6 +21,7 @@ function NavBar() {
                 <Link to='/jobs' className='Links'>Looking for a Job?</Link> / 
                 <Link to='/applicants' className='Links'>Looking to Hire?</Link>
               </p>
+              <span className="text-white text-2xl"> <FaRegCommentDots /> </span>
               <Link to='/WorkInProgress'>
                 <FiUser size={24} color="white" className='mr-6.5 acc' />
               </Link>
