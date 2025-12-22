@@ -21,7 +21,9 @@ function NavBar() {
                 <Link to='/jobs' className='Links'>Looking for a Job?</Link> / 
                 <Link to='/applicants' className='Links'>Looking to Hire?</Link>
               </p>
-              <span className="text-white text-2xl"> <FaRegCommentDots /> </span>
+              <Link to='/WorkInProgress'>
+                <span className="text-white text-2xl"> <FaRegCommentDots /> </span>
+              </Link>
               <Link to='/WorkInProgress'>
                 <FiUser size={24} color="white" className='mr-6.5 acc' />
               </Link>

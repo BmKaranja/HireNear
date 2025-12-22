@@ -1,8 +1,13 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import Footer from './Footer'
+import NavBar from './NavBar'
 function WorkInProgress() {
   return (
+    <div>
+      <div id='top1'>
+      <NavBar/>
+      </div>
     <div className='mt-30 mb-0 w-screen bar'>
       <div  style={{display:'flex', flexDirection:'column', gap:10,justifyContent:'center', alignItems:'center',alignContent:'center', marginBottom:'10vh'}} className='mb-30'>
       <img src='public\OIP-removebg-preview.png'></img>
@@ -13,6 +18,7 @@ function WorkInProgress() {
       </button>
       </div>
       <Footer/>
+    </div>
     </div>
   )
 }
