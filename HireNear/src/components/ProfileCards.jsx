@@ -59,7 +59,7 @@ useEffect(() => {
               </div>
             <Link
               to={`/profiles/${user.login.uuid}`}
-              state={{ user }}
+              state={{ user, job }}
               className="bg-blue-500 text-white px-3 py-0.5 rounded hover:bg-blue-600 transition duration-300"
             >
               View Profile →

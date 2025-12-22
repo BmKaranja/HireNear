@@ -57,6 +57,10 @@ h1 {
   background-position:left;
   background-repeat: no-repeat;
 }
+.a-f{
+  position: absolute;
+  left: -10%;
+}
 .bar{
   position: absolute;
   right: 0;
@@ -113,7 +117,7 @@ h1 {
   position:absolute;
   top:0%;
   left:0%;
-  background-color:#082d65;
+  background-color:#24005f;
   height: 10vh;
   padding-top: 1%;
 }
@@ -176,12 +180,38 @@ h1 {
   position: relative;
   top: -5%;
   margin-bottom: 2vh;
+}
+.bck{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 3vw;
 } 
 .top1{
   display: flex;
   flex-direction: row;
   flex: 1;
   flex-basis: 500;
+}
+#top2-div{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#top2{
+  background-color: #24005f;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+}
+#top2-div1{
+  position: absolute;
+  top: 43%;
+}
+#img1{
+  clip-path: circle(50%);
 }
 .centr{
   position: absolute;

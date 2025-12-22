@@ -3,7 +3,6 @@ import NavBar from './NavBar'
 import { Link} from 'react-router-dom'
 import Footer from './Footer'
 import About from './About'
-import Snowfall from 'react-snowfall'
 
 function LandingPage() {
   return (
