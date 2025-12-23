@@ -45,6 +45,15 @@ h1 {
   left: 0%;
   right:0%;
 }
+.hide{
+  display: none;
+}
+
+.menu{
+  width: 15vw;
+  position: absolute;
+  right: 20%;
+}
 .top{
   width: 100vw;
   background-image: url('/pexels-tima-miroshnichenko-5439469.jpg');
