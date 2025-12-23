@@ -1,4 +1,3 @@
-import React from 'react'
 import { useParams, useLocation, Link } from "react-router-dom";
 import NavBar from './NavBar';
 import Footer from './Footer';

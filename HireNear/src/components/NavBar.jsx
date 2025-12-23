@@ -6,6 +6,11 @@ import { FaRegCommentDots } from "react-icons/fa";
 function NavBar() {
   const Loggedin = localStorage.getItem('Loggedin') === 'true'
   const [dropdownOpen, setDropdownOpen] = useState(false)
+  function handleLogout() {
+  localStorage.setItem('Loggedin', 'false');
+  setDropdownOpen(false);
+  alert('Logged out successfully!')
+}
 
   return (
     <div>
@@ -40,7 +45,7 @@ function NavBar() {
                 <div className='menu absolute bg-gray-800 text-white p-2 rounded shadow-lg'>
                   <Link to='/WorkInProgress' className=' hover:bg-gray-500'>Settings</Link><br></br>
                   <Link to='/WorkInProgress' className=' hover:bg-gray-500'>Account details</Link><br></br>
-                  <Link to='/LandingPage' className=' hover:bg-gray-500'>LogOut</Link>
+                  <Link to='/' onClick={handleLogout} className='hover:bg-gray-500'>LogOut</Link>
                 </div>
               )}
               </div>
