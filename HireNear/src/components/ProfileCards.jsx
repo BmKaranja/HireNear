@@ -38,8 +38,10 @@ useEffect(() => {
   };
   return (
     <div>
-      <input type='search' placeholder='🔍 Search for applicants.....' id='appsearch' className='shadow-blue-950 lg:100 h-10 sm:w-10 md:w-75' onChange={(e) => setInputValue(e.target.value)} value={inputValue}></input>
-      <button onClick={handleSearch} className='bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300 ml-2'>Search</button><br></br><br></br>
+      <div id='srchb1'>
+        <input type='search' placeholder='🔍 Search for applicants.....' id='appsearch' className='shadow-blue-950 lg:100 h-10 sm:w-10 md:w-75 ' onChange={(e) => setInputValue(e.target.value)} value={inputValue}></input>
+        <button onClick={handleSearch} className='bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300 ml-2'>Search</button><br></br><br></br>
+      </div>
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
         {filteredUsers.map(({ user, job }) => (
           <div

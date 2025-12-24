@@ -74,7 +74,7 @@ function JobCard() {
 
   return (
     <div className="flex flex-row flex-1">
-      <div className="w-1/4 h-screen sticky top-0 mb-2">
+      <div className=" srchb2 w-1/4 h-screen sticky top-0 mb-2">
         <input type='search' placeholder='🔍 Search for your dream job.....' id='jobsearch' className='shadow-blue-950' onChange={(e) => setInputValue(e.target.value)} value={inputValue}></input>
         <button onClick={handleSearch} className='bg-blue-500 text-white px-4 py-2 mt-4 rounded hover:bg-blue-600 transition duration-300 ml-2'>Search</button><br></br><br></br>
         <p className='underline'>Job Filter</p><br></br>

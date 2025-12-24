@@ -16,7 +16,7 @@ function NavBar() {
     <div>
       <div className='p-2 flex justify-between w-screen mt-0'>
         {/* Logo Section */}
-        <div className='logo grid grid-cols-2' style={{ marginTop: '-2%' }}>
+        <div className='logo flex flex-1'>
           <Link to='/'>
             <span className='Name text-xl pt-1'>HireNear</span>
           </Link>
@@ -25,7 +25,7 @@ function NavBar() {
 
         {/* Conditional Rendering */}
         {Loggedin ? (
-          <div className='flex flex-right w-auto gap-10'>
+          <div className='flex flex-right w-auto gap-10 sm:mr-10'>
             <p className='l-1 text-white pr-7'>
               <Link to='/jobs' className='Links'>Looking for a Job?</Link> / 
               <Link to='/applicants' className='Links'>Looking to Hire?</Link>
@@ -51,14 +51,14 @@ function NavBar() {
               </div>
             </div>
         ) : (
-          <div className='flex flex-right w-auto gap-10'>
+          <div className='flex flex-right w-auto gap-10 '>
             <p className='l-1 text-white mt-0.5 pr-7'>
               <Link to='/jobs' className='Links'>Looking for a Job?</Link> / 
               <Link to='/applicants' className='Links'>Looking to Hire?</Link>
             </p>
             <Link 
               to='/signup' 
-              className='rounded-lg w-20.5 h-8 bg-blue-600 hover:bg-blue-900 mr-6.5 btns text-white flex items-center justify-center'
+              className=' sb rounded-lg w-20.5 h-8 bg-blue-600 hover:bg-blue-900 mr-6.5 btns text-white flex items-center justify-center'
             >
               SignUp
             </Link>

@@ -8,6 +8,44 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@media (max-width:768px){
+  #srchb1{
+    margin-top: 10%;
+  }
+  #appsearch{
+    width: 50vw;
+  }
+  .sb{
+    margin-top: 2%;
+  }
+  .l-1{
+    padding-left: 5vw;
+  }
+  #top1{
+    height: 20vh;
+    padding-bottom: 80px;
+  }
+  .logo{
+    margin-top: -10%;
+  }
+  .srchb2{
+    display: none;
+  }
+  .txt-1{
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btns{
+    width: 35vw;
+    margin-left:0%;
+  }
+  .jobcards{
+    width: 30vw;
+  }
+}
 body{
   margin: 0;
   padding: 0;
@@ -20,6 +58,9 @@ body{
 a {
   font-weight: 500;
   text-decoration: inherit;
+}
+.logo{
+  margin-top: -2%;
 }
 h1 {
   font-size: 3.2em;
@@ -87,6 +128,7 @@ h1 {
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
+  margin: 0;
 }
 .div-1{
   position: relative;
