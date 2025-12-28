@@ -8,7 +8,9 @@ function LandingPage() {
   return (
     <div className='w-screen h-screen bar '>
         <section className=' mr-0 w-screen h-150 top '>
-        <NavBar/>
+        <div className='pt-3'>
+          <NavBar/>
+        </div>
         <article div className='mt-25 top1  flex text-center float-left'>
             <div className='div-1 pr-20 w-3/4'>
                 <p className='text-7xl txt-1 pl-15 mr-20 text-white'>
