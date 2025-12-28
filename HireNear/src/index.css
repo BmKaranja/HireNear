@@ -28,6 +28,13 @@
   .logo{
     margin-top: -10%;
   }
+  .hide-1{
+    display: none;
+  }
+  .abt-sec{
+    display: flex;
+    flex-direction: column;
+  }
   .srchb2{
     display: none;
   }

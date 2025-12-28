@@ -6,7 +6,7 @@ function About() {
     <div className="p-8 max-w-4xl mx-auto">
       <h1 className="text-4xl font-bold text-center mb-8 underline">About HireNear</h1>
       <div className="text-lg leading-relaxed">
-        <div className='flex items-center gap-8 mb-20 mt-20'>
+        <div className='flex items-center gap-8 mb-20 mt-20 abt-sec'>
             <img src='/pexels-resumegenius-18848926.jpg' className='w-120 h-100 shadows rounded-2xl shrink-0 abt-img'></img>
             <div>
               <p className="text-gray-700 text-lg leading-relaxed abt">
@@ -19,7 +19,7 @@ function About() {
               </Link>
             </div>
         </div>
-        <div className='flex items-center gap-8 mb-20'>
+        <div className='flex items-center gap-8 mb-20 abt-sec'>
           <div>
             <p className="mb-6 text-gray-700 text-lg leading-relaxed abt">
               Our mission is to make job searching and hiring as seamless as possible, providing tools
@@ -32,9 +32,9 @@ function About() {
             </Link>
 
           </div>
-          <img src='/pexels-sora-shimazaki-5668863.jpg' className='w-120 h-100 shadows rounded-2xl shrink-0 abt-img'></img>
+          <img src='/pexels-sora-shimazaki-5668863.jpg' className='w-120 h-100 shadows rounded-2xl shrink-0 abt-img hide-1'></img>
         </div>
-        <div className='flex items-center gap-8 mb-20'>
+        <div className='flex items-center gap-8 mb-20 abt-sec'>
           <img src='/pexels-kowalievska-1174775.jpg' className='w-120 h-100 shadows rounded-2xl shrink-0 abt-img'></img>
           <p className="mb-6 text-gray-700 text-lg leading-relaxed abt">
             With features like location-based job searches, detailed job listings, and easy application
