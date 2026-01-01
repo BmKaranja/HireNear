@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function About() {
   return (
     <div className="p-8 max-w-4xl mx-auto">
-      <h1 className="text-4xl font-bold text-center mb-8 underline">About HireNear</h1>
+      <h1 className="text-4xl font-bold text-center mb-8 underline title">About HireNear</h1>
       <div className="text-lg leading-relaxed">
         <div className='flex items-center gap-8 mb-20 mt-20 abt-sec'>
             <img src='/pexels-resumegenius-18848926.jpg' className='w-120 h-100 shadows rounded-2xl shrink-0 abt-img'></img>
@@ -14,7 +14,7 @@ function About() {
               We believe in bridging the gap between talent and employers in your community.
               </p>
             <hr></hr>
-              <Link to='/jobs' className='bg-gray-200 pl-4 pr-4 rounded-2xl text-blue-600 font-semibold hover:bg-blue-900 hover:text-white mt-4 inline-block btns'>
+              <Link to='/jobs' className='bg-gray-200 pl-4 pr-4 rounded-2xl text-blue-600 font-semibold hover:bg-blue-900 hover:text-white mt-4 inline-block btns btns1'>
                 Jobs →
               </Link>
             </div>
@@ -27,7 +27,7 @@ function About() {
               seeking to grow your team.
             </p>
             <hr></hr>
-            <Link to='/applicants' className='bg-gray-200 pl-4 pr-4 rounded-2xl text-blue-600 font-semibold hover:bg-blue-900 hover:text-white mt-4 inline-block btns'>
+            <Link to='/applicants' className='bg-gray-200 pl-4 pr-4 rounded-2xl text-blue-600 font-semibold hover:bg-blue-900 hover:text-white mt-4  inline-block btns btns1'>
                 Applicants →
             </Link>
 

@@ -25,8 +25,8 @@ function NavBar() {
 
         {/* Conditional Rendering */}
         {Loggedin ? (
-          <div className='flex flex-right w-auto gap-10 sm:mr-10'>
-            <p className='l-1 text-white pr-7'>
+          <div className='flex flex-right w-auto gap-10 sm:mr-10 down'>
+            <p className='l-1 text-white pr-7 '>
               <Link to='/jobs' className='Links'>Looking for a Job?</Link> / 
               <Link to='/applicants' className='Links'>Looking to Hire?</Link>
             </p>
@@ -43,9 +43,9 @@ function NavBar() {
               </button>
               {dropdownOpen && (
                 <div className='menu absolute bg-gray-800 text-white p-2 rounded shadow-lg'>
-                  <Link to='/WorkInProgress' className=' hover:bg-gray-500'>Settings</Link><br></br>
-                  <Link to='/WorkInProgress' className=' hover:bg-gray-500'>Account details</Link><br></br>
-                  <Link to='/' onClick={handleLogout} className='hover:bg-gray-500'>LogOut</Link>
+                  <Link to='/WorkInProgress' className=' hover:bg-gray-500 menulinks'>Settings</Link><br></br>
+                  <Link to='/WorkInProgress' className=' hover:bg-gray-500 menulinks'>Account details</Link><br></br>
+                  <Link to='/' onClick={handleLogout} className='hover:bg-gray-500 menulinks'>LogOut</Link>
                 </div>
               )}
               </div>

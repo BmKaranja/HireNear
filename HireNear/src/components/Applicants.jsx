@@ -6,16 +6,16 @@ function Applicants() {
   return (
     <div>
       <div id='top1'>
-      <NavBar/>
+        <NavBar/>
       </div>
-        <section>
-          {/* Scrollable profile cards */}
-          <div className="flex-1 overflow-y-auto p-4">
-            <ProfileCards />
-          </div>
-        </section>
-      <Snowfall style={{height:'100vh'}}wind={[-0.5, 2.0]} />
-    </div>
+      <section>
+        {/* Scrollable profile cards */}
+        <div className="flex-1 overflow-hidden p-4 p-div">
+          <ProfileCards />
+        </div>
+      </section>
+    <Snowfall style={{height:'100vh'}}wind={[-0.5, 2.0]} />
+  </div>
   )
 }
 

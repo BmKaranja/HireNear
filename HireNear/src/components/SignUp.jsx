@@ -34,27 +34,33 @@ function SignUp() {
       <div className='flex1'>
         <div>
         <label htmlFor='FNme'>First Name: </label>
-        <input type='text' id='FNme' required className=' bg-gray-100 w-93 h-8'></input><br></br>
+        <input type='text' id='FNme' required className=' bg-gray-100 w-93 h-8 text-center'></input><br></br>
         </div>
         <br></br>
         <div>
         <label htmlFor='LNme'>Last Name: </label>
-        <input type='text' id='LNme' required className=' bg-gray-100  w-93 h-8'></input><br></br>
+        <input type='text' id='LNme' required className=' bg-gray-100  w-93 h-8 text-center'></input><br></br>
         </div>
         <br></br>
         <div>
         <label htmlFor='Usere'>Email Account: </label>
-        <input type='email' id ='Usere' required className=' w-93 h-8 bg-gray-100'></input><br></br>
+        <input type='email' id ='Usere' required className=' w-93 h-8 bg-gray-100 text-center'></input><br></br>
         </div>
         <br></br>
         <div>
         <label htmlFor='Usps'>Password: </label>
-        <input type='password' id='Usps' required className=' w-93 h-8  bg-gray-100' ></input><br></br>
+        <input type='password' id='Usps' required className=' w-93 h-8  bg-gray-100 text-center' ></input><br></br>
         </div>
         <br></br>
       </div>
       <button type='submit' disabled={isLoading} className='bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full h-10' id='btn-1'>
         {isLoading ? 'Loading...' : 'Create Account →'}
+      </button>
+      <button type='submit' className='hidden  bg-blue-600 hover:bg-blue-700 text-white font-bold ml-15 py-4 px-4 rounded-full h-1' id='btn-2'>
+        <Link 
+        to='/'
+        onClick={() => localStorage.setItem('Loggedin', 'true')}
+        style={{marginTop:'-10%'}}>Create Account →</Link>
       </button>
       <p>Already have an Account?<Link to='/login' className="text-blue-600 mt-6">Login</Link> </p>
     </form>

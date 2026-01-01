@@ -12,6 +12,7 @@ function Login() {
     if (e.target.checkValidity()) {
       setIsLoading(true);
       setIn(true)
+      localStorage.setItem('Loggedin', 'true');
       setTimeout(() => {
         navigate('/', {state:{Loggedin}});
       }, 1500);

@@ -37,7 +37,7 @@ function ProfilePage() {
         <p><span className='font-semibold'>Gender:</span> {user.gender}</p>
         <p><span className='font-semibold'>Location:</span> {user.location.state},{user.location.country}</p>
         <h2 className='text-2xl font-semibold underline pt-5'>Description</h2>
-        <div className='w-3/4 ml-40'>
+        <div className='w-3/4 ml-40 desc'>
           <hr></hr>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus vero consequatur ut eum ratione laboriosam, a ea reprehenderit unde soluta quidem similique odio ex. Eius aspernatur numquam sequi nihil ex?.Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita atque sunt facilis nulla consequatur ex eligendi suscipit rerum amet, eos reprehenderit commodi cum. A aperiam, odit quos itaque eligendi reiciendis.</p>
         </div>

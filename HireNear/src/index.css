@@ -10,23 +10,88 @@
 }
 @media (max-width:768px){
   #srchb1{
-    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-left: -25vw;
+    justify-items: center;
+    align-items: center;
+
   }
   #appsearch{
-    width: 50vw;
+    width: 70vw;
+  }
+  .srchbtn{
+    margin-top: 2%;
+    width: 40vw;
   }
   .sb{
-    margin-top: 2%;
+    margin-top: 5%;
   }
   .l-1{
-    padding-left: 5vw;
+    display: none;
+  }
+  .sb{
+    margin-top: 1.5vh;
+  }
+  .menu{
+    background-color: transparent;
+  }
+  .flex-1{
+    margin-left: 5vw;
+  }
+  .btns{
+    height: 5vh;
+    font-size: 1.48vh;
+  }
+  .logo{
+    margin-left: -5%;
+  }
+  .menulinks{
+    padding: 10px;
+    margin-left: -30vw;
+  }
+  #top2{
+    margin-top: 10vh;
+  }
+  #top2-div1{
+    display: block;
+    text-align: left;
+    margin-left: -5vw;
+    margin-top: -10%;
+  }
+  .desc{
+    margin-left: -0.5vw;
+    width: 90vw;
+  }
+  .o-links{
+    display: flex;
+    text-align: center;
+    text-decoration: underline;
+    color: #082d65;
+    padding-top: 5vh;
+    width: 100vw;
+  }
+  #message{
+    width: 90vw;
+  }
+  .down{
+    margin-top: 2vh;
   }
   #top1{
     height: 20vh;
     padding-bottom: 80px;
+    width: 100vw;
   }
   .logo{
     margin-top: -10%;
+  }
+  .btns1{
+    font-size: medium;
+    padding-top: 1vh;
+  }
+  .title{
+    font-size: 5vh;
   }
   .hide-1{
     display: none;
@@ -38,19 +103,47 @@
   .srchb2{
     display: none;
   }
+  .ap-cards{
+    display: flex;
+    flex-direction:column;
+    flex: 1;
+  }
+  .p-div{
+    margin-left:0%;
+    overflow-x: hidden;
+  }
+  .ap-card{
+    width: 70vw;
+    margin-left: 0%;
+  }
   .txt-1{
     font-size: 40px;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-left: -5%;
   }
   .btns{
     width: 35vw;
     margin-left:0%;
   }
-  .jobcards{
-    width: 30vw;
+  #btn-1{
+    display: none;
+  }
+  #btn-2{
+    display: flex;
+    text-align: center;
+    margin-top: 10%;
+  }
+  .marginr{
+    margin-top:20%;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 1rem;
+  }
+  .jobdetails{
+    width: 70px;
   }
 }
 body{
@@ -156,7 +249,7 @@ h1 {
   color: #0f52ba;
   transition: 500ms;
 }
-.btns:hover{
+.btns .btns1:hover{
   transform: scale(1.1);
   transition: 600ms;
 }

@@ -37,15 +37,19 @@ useEffect(() => {
     setSearchTerm(inputValue);
   };
   return (
-    <div>
+    <div className='w-screen overflow-hidden'>
+      <span className='o-links hidden'>
+        <Link to='/applicants' className='ml-4 underline'>Looking to Hire?</Link>
+        <Link to='/jobs' className='ml-4 underline'>Looking for a Job?</Link>
+      </span>     
       <div id='srchb1'>
-        <input type='search' placeholder='🔍 Search for applicants.....' id='appsearch' className='shadow-blue-950 lg:100 h-10 sm:w-10 md:w-75 ' onChange={(e) => setInputValue(e.target.value)} value={inputValue}></input>
-        <button onClick={handleSearch} className='bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300 ml-2'>Search</button><br></br><br></br>
+        <input type='search' placeholder='🔍 Search for talent.....' id='appsearch' className='shadow-blue-950 lg:100 h-10 sm:w-10 md:w-75 ' onChange={(e) => setInputValue(e.target.value)} value={inputValue}></input>
+        <button onClick={handleSearch} className='srchbtn bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300 ml-2'>Search</button><br></br><br></br>
       </div>
-      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+      <div className='ap-cards grid grid-cols-3'>
         {filteredUsers.map(({ user, job }) => (
           <div
-            className='mt-4 mb-4 ml-6 mr-4 p-5 border rounded-lg shadow-lg hover:shadow-2xl transition duration-300 bg-gray-100'
+            className=' ap-card w-80 mt-4 mb-4 ml-2 mr-4 p-5 border rounded-lg shadow-lg hover:shadow-2xl transition duration-300 bg-gray-100'
             key={user.login.uuid}
           >
               <div className='flex items-center'>
@@ -71,7 +75,7 @@ useEffect(() => {
         ))}
       </div>
       {filteredUsers.length === 0 && searchTerm && (
-        <p className='text-center text-gray-500 mt-4'>No applicants found for the searched job title.</p>
+        <p className='overflow-hidden text-center text-gray-500 mt-4'>No applicants found .</p>
       )}
     </div>
 

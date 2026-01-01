@@ -89,7 +89,7 @@ function JobCard() {
         <input type='checkbox' checked={filters.rating3Below} onChange={() => handleFilterChange('rating3Below')}></input><label>Rating 3 & Below </label><br></br><br></br>
         <input type='checkbox' checked={filters.noRating} onChange={() => handleFilterChange('noRating')}></input><label>No Rating</label><br></br><br></br>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 marginr gap-10 mt-10 flex-1 overflow-y-auto p-4 ml-10">
+      <div className="grid grid-cols-3 marginr gap-10 mt-10 flex-1 overflow-y-auto ml-12" id='grid'> 
         {filteredJobs.map((job, index) => {
           const details = job.MatchedObjectDescriptor;
           const randomRating = ratings[index % ratings.length];
