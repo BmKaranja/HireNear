@@ -90,21 +90,18 @@ function JobCard() {
         <input type='checkbox' checked={filters.noRating} onChange={() => handleFilterChange('noRating')}></input><label>No Rating</label><br></br><br></br>
       </div>
       <div className="grid grid-cols-3 marginr gap-10 mt-10 flex-1 overflow-y-auto ml-12" id='grid'> 
-        {filteredJobs.map((job, index) => {
+        {filteredJobs.map((job) => {
           const details = job.MatchedObjectDescriptor;
-          const randomRating = ratings[index % ratings.length];
-          const stars = '⭐'.repeat(randomRating);
           return (
-            <div key={job.MatchedObjectId} className="h-10 jobcards">
+            <div key={job.MatchedObjectId} className="h-20 jobcards">
               <div className="jdetails">
                 <p>{details.PositionTitle}</p>
                 <p>{details.OrganizationName}</p>
                 <p className="text-gray-500">{details.PositionLocation[0]?.LocationName}</p>
                 <p className="text-gray-500">{details.PublicationStartDate}</p>
-                <p className="text-yellow-500">{stars}</p>
                 <a href={details.ApplyURI[0]} target="_blank" rel="noopener noreferrer">
-                  <button className="bg-blue-500 text-white px-3 py-0.5 rounded mt-2 hover:bg-blue-600 transition duration-300">
-                    Apply →
+                  <button className="bg-blue-500 text-white px-3 py-0.5 rounded mt-5 hover:bg-blue-600 transition duration-300">
+                    View Job Details→
                   </button>
                 </a>
               </div>
